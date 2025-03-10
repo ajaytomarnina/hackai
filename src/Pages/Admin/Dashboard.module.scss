@@ -1,0 +1,30 @@
+@import '../../mixins.scss';
+
+@mixin header {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  padding: 1rem 0;
+  margin-bottom: 1.2rem;
+}
+
+.btn {
+  width: 160px !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.disabled {
+  cursor: not-allowed !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.abled {
+  color: white !important;
+  cursor: pointer !important;
+}
+
+.input {
+  width: 400px !important;
+  margin-bottom: 2.4rem !important;
+  position: relative !important;
+}

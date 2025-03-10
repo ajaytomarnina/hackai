@@ -1,0 +1,46 @@
+.admin_header {
+  height: var(--admin_header_length);
+
+  @media (max-width: 640px) {
+    display: none;
+  }
+}
+
+.admin_root {
+  display: flex;
+
+  .sideBar {
+    @media (max-width: 640px) {
+      display: none;
+
+      &_able {
+        display: block;
+        position: absolute;
+        background-color: white;
+        height: 100vh;
+        z-index: var(--level_3);
+        position: fixed;
+      }
+    }
+  }
+
+  .outlet {
+    padding: var(--gap_1) var(--gap_2);
+    background-color: var(--admin_backgroundColor);
+    flex: 1;
+    height: calc(100vh - var(--admin_header_length));
+
+    @media (max-width: 640px) {
+      padding: 0 2rem;
+      height: max-content;
+      min-height: 100vh;
+    }
+  }
+}
+
+.backdrop {
+  z-index: 100;
+  top: -7.2rem;
+  background: #060a0d33;
+  height: calc(100vh + var(--admin_header_length));
+}

@@ -1,0 +1,81 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  width: var(--auth_outlet_width);
+
+  .header {
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 4rem;
+    margin-bottom: 2.4rem;
+    color: #1e333f;
+  }
+
+  .opt {
+    display: flex;
+    font-weight: 600;
+    color: rgba(30, 51, 63, 0.6);
+    margin-bottom: 2.4rem;
+    cursor: pointer;
+
+    .email {
+      margin-right: 1.6rem;
+      padding: 1.2rem 0px;
+    }
+
+    .mobile {
+      padding: 1.2rem 0px;
+    }
+
+    &_active {
+      color: #1e333f;
+      border-bottom: 0.2rem solid #181c30;
+    }
+  }
+
+  .form {
+    .input {
+      width: 100%;
+      margin-bottom: 2.4rem;
+      position: relative;
+    }
+
+    .password {
+      width: 100%;
+      margin-bottom: 2.4rem;
+      position: relative;
+    }
+
+    .btn {
+      margin-top: 2.8rem;
+      width: 100%;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 2.4rem;
+    }
+
+    .disabled {
+      // cursor: not-allowed;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .abled {
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  .footer {
+    padding: 1.2rem auto;
+    font-weight: 400;
+    color: rgba(30, 51, 63, 0.6);
+    text-align: center;
+  }
+}
+
+.link {
+  font-weight: 600;
+  color: #181c30;
+  text-decoration: none;
+}

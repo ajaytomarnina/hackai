@@ -1,0 +1,25 @@
+.btn{
+
+    display: flex;
+    background-color: #181C30 ;
+    border: none;
+    color: white;
+    border-radius: 1rem;
+    padding: 1.2rem 1.6rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    .icon{
+        margin-right: 0.8rem;
+        height: 2rem;
+        width: 2rem;
+    }
+    
+    .text{
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 600;
+    }
+
+}
